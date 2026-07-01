@@ -1,0 +1,8 @@
++470
+Eternal|||~~~Read Scriptures|||~~~Study BoM for 10 minutes a day|||~~~False|||~~~10
+Eternal|||~~~Brush teeth|||~~~Brush every day for 2 minutes|||~~~False|||~~~5
+Checklist|||~~~Do homework|||~~~Complete a homework assignment|||~~~False|||~~~10|||~~~8|||~~~100|||~~~0
+Simple|||~~~Finish assignment|||~~~Complete the W10 Prove assignment|||~~~False|||~~~100
+Checklist|||~~~Take meds|||~~~Take pain meds every 12 hours for a week|||~~~False|||~~~20|||~~~14|||~~~100|||~~~0
+Checklist|||~~~Run|||~~~Run 8 miles Mon-Sat|||~~~True|||~~~50|||~~~6|||~~~100|||~~~6
+Simple|||~~~Give a talk|||~~~Speak for 10 minutes|||~~~True|||~~~50
