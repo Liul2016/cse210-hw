@@ -1,26 +1,41 @@
+/*
+Assignment
+
+This is a class for school assignments. User
+will add possible points, assignment names,
+and the class for which the assignment is due.
+*/
+
 using System;
+using System.Runtime.InteropServices.Swift;
 
 public class Assignment : Item
 {
     // Attributes
     private string _RCL_class;
-    private string _RCL_points;
+    private int _RCL_points;
 
-    // Constructor
-    public Assignment(string title, DateTime dueDate, bool completed, string className, string points) : base(title, dueDate, completed)
+    // Constructors
+    public Assignment(string title, DateTime dueDate, bool completed, string className, int points) : base(title, dueDate, completed)
     {
         _RCL_class = className;
         _RCL_points = points;
     }
 
+    public Assignment(string[] info) : base(info) // For loading from file
+    {
+        _RCL_class = info[4];
+        _RCL_points = int.Parse(info[5]);
+    }
+
     // Methods
     public override string RCL_Display()
     {
-        return "";
+        return $"{_RCL_class}: {base.RCL_GetTitle()} - Due {base.RCL_GetDueDate()} ({_RCL_points} points)";
     }
 
     public override string RCL_Save()
     {
-        return "";
+        return $"{GetType()}~~~|||~~~{base.RCL_GetTitle()}~~~|||~~~{base.RCL_GetDueDate().ToString("MM/dd/yyyy HH:mm")}~~~|||~~~{base.RCL_GetCompleted()}~~~|||~~~{_RCL_class}~~~|||~~~{_RCL_points}";
     }
 }
